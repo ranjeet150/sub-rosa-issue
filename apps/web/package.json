@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Jury demo UI — lifecycle, observer, agents, x402, keeper, seal-off vs seal-on attack, mandate cap safety lab.",
+  "description": "Jury demo UI \u2014 lifecycle, observer, agents, x402, keeper, seal-off vs seal-on attack, mandate cap safety lab.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "test": "node --import tsx --test src/demo/trace-health-check.test.ts src/lib/config.test.ts src/dashboard/fixture-health-check.test.ts src/lib/round-status.test.ts src/components/dashboard/RoundStatusCard.test.tsx",
     "typecheck": "tsc --noEmit -p tsconfig.json"
