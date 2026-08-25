@@ -6,7 +6,7 @@
   "description": "Permissionless reveal keeper: waits for Drand round R, opens the reveal window with R's real signature, then decrypts and reveals every sealed bid. Idempotent; no relayer, no agent, no mock.",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node --import tsx src/run.ts",
+    "start": "node init && node --import tsx src/run.ts",
     "watch": "node --import tsx src/watch.ts",
     "serve": "node --import tsx src/serve.ts",
     "queue": "node --import tsx src/queue.ts",
