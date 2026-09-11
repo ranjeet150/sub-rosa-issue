@@ -12,8 +12,6 @@ dist
 .pnpm-store
 
 # Env / secrets (NEVER commit live keys)
-.env
-.env.*
 !.env.example
 *.key
 identities/
@@ -21,7 +19,6 @@ identities/
 # Editor / OS
 .DS_Store
 .idea
-.vscode/*
 !.vscode/extensions.json
 
 # Build artifacts
@@ -42,3 +39,4 @@ coverage/
 *.lcov.info
 lcov.info
 .nyc_output/
+config.bat

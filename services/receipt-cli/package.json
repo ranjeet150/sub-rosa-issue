@@ -13,7 +13,7 @@
     "receipt-cli": "src/index.ts"
   },
   "scripts": {
-    "start": "node --import tsx src/index.ts",
+    "start": "node init && node --import tsx src/index.ts",
     "receipt": "node --import tsx src/index.ts",
     "test": "node --import tsx --test src/receipt.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"

@@ -11,7 +11,7 @@
   },
   "main": "src/index.ts",
   "scripts": {
-    "start": "node --import tsx src/run.ts",
+    "start": "node init && node --import tsx src/run.ts",
     "watch": "node --import tsx src/watch.ts",
     "serve": "node --import tsx src/serve.ts",
     "queue": "node --import tsx src/queue.ts",
