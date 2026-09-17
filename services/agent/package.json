@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Autonomous sealed-bid agents. Each agent holds a principal-signed session mandate (scoped caps), pays the x402 appraisal API per call, sizes a bid from the appraisal, and commits over Soroban RPC with its session key — no relayer, no mock.",
+  "description": "Autonomous sealed-bid agents. Each agent holds a principal-signed session mandate (scoped caps), pays the x402 appraisal API per call, sizes a bid from the appraisal, and commits over Soroban RPC with its session key \u2014 no relayer, no mock.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sub-Rosa-Issue/sub-rosa-issue.git",
@@ -16,7 +16,7 @@
     "./bidder": "./src/bidder.ts"
   },
   "scripts": {
-    "start": "node --import tsx src/run.ts",
+    "start": "node init && node --import tsx src/run.ts",
     "test": "node --import tsx --test src/mandate.test.ts src/bidder.test.ts src/mandate-cap-negative.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
